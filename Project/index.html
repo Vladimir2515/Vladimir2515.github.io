@@ -1,0 +1,539 @@
+﻿ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Test Project</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link href="style/bootstrap.min.css" rel="stylesheet">
+		<link href="style/user.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+	<header class="header">
+			 	<nav class="navbar-collapse collapse text-center" role="navigation">
+				<div class="container-fluid">
+					<div class="row">
+						<ul class="col-md-12 nav navbar-nav header_list">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <span class="dot"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">EURO</a></li>
+									<li><a href="#">UAH</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag"></span>English <span class="dot"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Japan</a></li>
+									<li><a href="#">Russian</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Car parts</a></li>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="profile"></span>Jakson Smith <span class="dot"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#"><span class="profile"></span>Jakson Smith</a></li>
+										<li><a href="#"><span class="profile"></span>Jakson Smith</a></li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+					</div><!-- /.row-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="col-sm-12 col-md-3 navbar-header">
+						<a class="navbar-brand" href="#">Brand</a>
+					</div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="col-sm-12  col-md-6 nav navbar-nav">
+							<li><a href="#">Сars</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Trucks</a></li>
+							<li><a href="#">Directories</a></li>
+							<li><a href="#">Car Loans</a></li>
+							<li><a href="#">Insurance</a></li>
+						</ul>
+					    <form class="col-sm-12 col-md-2 navbar-form navbar-right" role="search">
+							<button type="button" class="btn btn-primary btn-lg partner_button">Become a partner</button>
+							<button type="button" class="btn btn-primary btn-lg sell_button">Sell your car</button>
+						</form>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<div class="col-xs-12 col-md-12 down_header">
+				<div class="toggle-mnu"><span></span></div>
+				<div class="text"> 
+					<h1 class="banner__title">Find the right car for you</h1>
+					<p class="banner__text">Experience clear and simple car buying and selling</p>
+				</div>
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#home">Cars</a></li>
+					<li><a data-toggle="tab" href="#menu1">Bikes</a></li>
+					<li><a data-toggle="tab" href="#menu2">Trucks</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<div class="col-md-11">
+							<div class="row">
+								<div class="col-md-3 dropdown_select">
+									<label>Make</label>
+									<select class="form-control">
+										<option value="one">One </option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+								<div class="col-md-3 dropdown_select">
+									<label>Model</label>
+									<select class="form-control">
+										<option value="one">Select make first</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+								<div class="col-md-3 dropdown_select">
+									<label>City</label>
+									<select class="form-control">
+										<option value="one">All cities</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+								<div class="col-md-2">
+								    <button type="button" class="btn btn-default search"><span class="glyphicon glyphicon-search"></span> 1,320,048offers</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 price">
+									<p>
+									    <label for="amount">Price range:</label>
+									    <input type="text" id="amount">
+									</p>
+								    <div id="slider-range">
+									    <div class="min">$ 1500</div>
+									    <div class="max">$ 50.000.000</div>
+								    </div>
+								</div>
+								<div class="col-md-3 dropdown_select">
+									<label>Condition</label>
+									<select class="form-control">
+										<option value="one">Used</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+						<h3>Menu 1</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<h3>Menu 2</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					</div>
+				</div><!-- /.tab-content -->
+			</div><!-- /.lower_header -->
+    </header>
+    <main class="main"> 
+    	<div class="main-container">
+			<div class="main-block">
+				<div class="row logo-row"> 
+					<div> 
+						<h2>Top Make</h2>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/audi.png" alt="...">
+							<p><a>Audi</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/bmw.png" alt="...">
+							<p><a>BMW</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/toyota.png" alt="...">
+							<p><a>4 Toyota</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/volkswagen.png" alt="...">
+							<p><a>Volkswagen</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/honda.png" alt="...">
+							<p><a>Honda</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/hundai.png" alt="...">
+							<p><a>Hundai</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/renault.png" alt="...">
+							<p><a>Renault</a></p>
+						</div>
+						<div class="col-md-1 logo-block"> 
+							<img class="logo-img" src="images/logo/kia.png" alt="...">
+							<p><a>KIA</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="row type-row"> 
+					<div> 
+						<h2>Type</h2>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/1.png" alt="...">
+							<p><a>Saloon</a></p>
+						</div>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/2.png" alt="...">
+							<p><a>Hatchback</a></p>
+						</div>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/3.png" alt="...">
+							<p><a>4 Wheel Drives & SUVs</a></p>
+						</div>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/4.png" alt="...">
+							<p><a>Convertibles & Station Wagons</a></p>
+						</div>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/5.png" alt="...">
+							<p><a>Buses & Vans</a></p>
+						</div>
+						<div class="col-md-2 type-block"> 
+							<img class="type-img" src="images/type/6.png" alt="...">
+							<p><a>Trucks</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Most recent cars for sale in <span class="red-text">Ethiopia</span></h2>
+				<article class="col-sm-6 col-md-2 car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-1.png" alt="...">
+						<div class="caption">
+							<h3>2017 Genesis G90 3.3T Premium</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>2,150,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">27K</p>
+								</div>
+								<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-2.png" alt="...">
+						<div class="caption">
+							<h3>2014 Subaru Forester 2.5I</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>4,100,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">2K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-3.png" alt="...">
+						<div class="caption">
+							<h3>2016 Toyota 4Runner SR5</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>5,850,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">9K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-4.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2013 Mini Cooper</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>1,600,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">32K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-5.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2012 Volvo XC70 T6</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>1,782,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">46K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>   
+			</div>
+			<div class="row">
+				<article class="col-sm-6 col-md-2 car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-1.png" alt="...">
+						<div class="caption">
+							<h3>2017 Genesis G90 3.3T Premium</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>2,150,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">27K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-2.png" alt="...">
+						<div class="caption">
+							<h3>2014 Subaru Forester 2.5I</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>4,100,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">2K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-3.png" alt="...">
+						<div class="caption">
+							<h3>2016 Toyota 4Runner SR5</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>5,850,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">9K</p>
+								</div>
+							</div>
+							<p class="col-md-11 low"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-4.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2013 Mini Cooper</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>1,600,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">32K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-5.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2012 Volvo XC70 T6</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>1,782,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">46K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article> 
+			</div>
+			<div class="row">
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-6.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2009 Nissan Altima SE</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>790,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">26K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-7.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2012 Kia Optima EX</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>1,140,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">59K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-8.png" alt="...">
+						<div class="caption">
+							<h3 class="short-title">2015 Lexus RX 350</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>2,180,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">32K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+				    </div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block">
+					<div class="thumbnail">
+						<img src="images/cars/car-9.png" alt="...">
+						<div class="caption">
+							<h3>2016 Dodge Ram 2500 Laramie</h3>
+							<div class="content-block">
+								<div class="col-xs-8 col-md-8">
+									<p>Price </p>
+									<p class="price-text">Br <span>4,360,000</span></p>
+								</div>
+								<div class="col-xs-4 col-md-4">
+									<p>Mileage </p>
+									<p class="black-text">11K</p>
+								</div>
+							</div>
+							<p class="col-md-11 bottom-text"><span class="glyphicon glyphicon-map-marker"></span>Ethiopia-Addis-Ababa</p>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-6 col-md-2  car-block blue">
+					<div class="thumbnail">
+						<div class="col-md-9 caption">
+							<img class="car-photo"  src="images/cars/foto-car.png" alt="...">
+							<h3 class="blue-title">View all cars in <span class="last-text">Ethiopia</span></h3>
+						</div>
+				    </div>
+				    <input type="submit" class="round-btn"/>
+			    </article>
+		    </div>
+		</div>
+    </main>
+    <footer class="footer">
+		<div class="wrap">
+			<div class="row">
+				<div class="col-xs-8 col-md-3">
+					<h5 class="footer__titles">About</h5>
+					<ul class="footer__list">
+						<a href="#"></a>
+						<li class="footer__items"><a href="#">Our story</a></li>
+						<li class="footer__items"><a href="#">Advertising</a></li>
+						<li class="footer__items"><a href="#">Privacy Police</a></li>
+						<li class="footer__items"><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-8 col-md-5">
+					<h5 class="footer__titles">Search</h5>
+					<ul class="footer__list">
+						<li class="footer__items"><a href="#">Cars</a></li>
+						<li class="footer__items"><a href="#">Motorbikes</a></li>
+						<li class="footer__items"><a href="#">Trucks</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-10 col-md-4">
+					<h5 class="footer__title">Social networks & feeds</h5>
+					<p class="footer__item"><a href="#">Connect with us on Facebook,<br>Youtube,Twitter</a></p>
+					<ul class="socseti">
+						<li> <a href ="#" class="facebook"> </a> </li>
+						<li> <a href ="#" class="twitter"> </a> </li>
+						<li> <a href ="#" class="google"> </a> </li>
+						<li> <a href ="#" class="linkedin"> </a> </li>
+						<li> <a href ="#" class="instagram"> </a> </li>
+						<li> <a href ="#" class="youtube"> </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </footer>
+	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/user.js"></script>
+	</body>
+</html>
