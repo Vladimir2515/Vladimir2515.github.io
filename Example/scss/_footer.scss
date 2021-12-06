@@ -1,0 +1,83 @@
+.footer-content {
+    width: 100%;
+    background: #757575;
+    color: #f7f7f7;
+}
+.footer__box {
+    max-width: 1120px;
+    min-height: 230px;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+}
+.footer__company-info {
+    width: 38%;
+}
+
+.footer__company-info a,
+.footer__company-logo a {
+    color: #f7f7f7;
+    text-decoration: underline;
+}
+.footer__company-info a:hover,
+.footer__company-logo a:hover {
+    text-decoration: none;
+}
+.footer__company-info ul {
+    list-style-type: none;
+}
+.footer__company-info ul li {
+    margin: 10px 0px;
+}
+.footer__company-info p {
+    margin: 10px 0px;
+}
+.footer__company-logo {
+    color: #f7f7f7;
+    text-align: left;
+}
+.footer__company-logo a.footer__logo {
+    float: left;
+}
+.footer__company-logo p {
+    width: 220px;
+    padding-left: 50px;
+    margin: 10px 0px;
+}
+.footer__company-logo a {
+    margin: 10px 0px;
+}
+@media (max-width: 900px) and (min-width: 700px) {
+    .footer__box {
+        flex-flow: column nowrap;
+        font-size: 20px;
+    }
+    .footer__company-info {
+        width: 55%;
+        margin: 20px auto;
+    }
+
+    .footer__company-logo {
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__box {
+        flex-flow: column nowrap;
+        font-size: 30px;
+    }
+    .footer__company-info {
+        margin: 20px auto;
+    }
+
+    .footer__company-logo {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
