@@ -1,0 +1,97 @@
+/*Контейнер для Section 8*/
+.footer__box {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*Общие стили для 3х блоков*/
+.footer__address-item,
+.footer__info-item,
+.footer__media-item {
+	flex: 0 0 33.3333333333%;
+	max-width: 33.3333333333%;
+}
+
+/*Адрес-блок*/
+.footer__address-item h4 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 35px;
+}
+
+/*Контакт-блок*/
+.footer__info-item {
+	text-align: center;
+	position: relative;
+}
+.footer__info-item .footer__tel-block {
+	font-weight: bold;
+	font-size: 18px;
+	color: #3b3b3b;
+	border-bottom: none;
+	display: inline-block;
+	width: 100%;
+}
+.footer__info-item .footer__mail-block {
+	display: inline-block;
+	margin-top: 30px;
+	font-size: 16px;
+	text-decoration: none;
+	border-bottom: 1px solid #486df3;
+	color: #486df3;
+}
+
+/*Соц-медиа*/
+.footer__media-item .soc-media {
+	overflow: hidden;
+	width: 200px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+.footer__media-item .soc-media li {
+	float: left;
+	margin-left: 10px;
+}
+.footer__media-item .soc-media li a {
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border: 3px solid #090909;
+	transition: 0.5s ease;
+	left: 50%;
+}
+.footer__media-item .soc-media li a:hover {
+	background-color: #efcc23;
+}
+.footer__media-item .soc-media li a img {
+	width: 20px;
+	position: absolute;
+	left: 20%;
+	top: 16%;
+}
+/*Адаптив*/
+
+@media (min-width: 280px) and (max-width: 776px) {
+	/* Section 8*/
+	/*Общие стили для 3х блоков*/
+	.footer__address-item,
+	.footer__info-item,
+	.footer__media-item {
+		flex: 0 0 90%;
+		max-width: 90%;
+		text-align: center;
+	}
+	/*Контакт-блок*/
+	.footer__info-item {
+		margin-bottom: 40px;
+	}
+	/*Адрес-блок*/
+	.footer__address-item h4 {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+}
